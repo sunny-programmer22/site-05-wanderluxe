@@ -1,4 +1,4 @@
-/**
+﻿/**
  * ==============================================================================
  * WanderLuxe Travel - HilltopAds Integration & Monetization Engine
  * File: ads-config.js
@@ -58,9 +58,9 @@
       scriptUrl: 'https://scripts.hilltopads.net/ipp.js?zone=209481',
       directLinkUrl: 'https://hilltopads.com/?ref=wanderluxe_flight_deals_alert',
       creative: {
-        title: '✈️ Flash Deal: Tokyo & Kyoto from $389 RT',
+        title: 'âœˆï¸ Flash Deal: Tokyo & Kyoto from $389 RT',
         body: 'Secret airline error fare discovered! Valid for travel through Nov 2026. Only 4 seats remaining.',
-        tag: 'WanderLuxe Deal Tracker • HilltopAds IPP',
+        tag: 'WanderLuxe Deal Tracker â€¢ HilltopAds IPP',
         ctaText: 'Claim Deal Now'
       }
     },
@@ -78,7 +78,7 @@
           headline: 'Luxury Villa & Flight Packages Up To 55% OFF',
           brand: 'Emirates & WanderLuxe VIP Escapes',
           cta: 'Unlock Secret Fares',
-          tagline: 'Instant Booking • Free Cancellation • Zero Booking Fees'
+          tagline: 'Instant Booking â€¢ Free Cancellation â€¢ Zero Booking Fees'
         }
       },
       sidebar300x250: {
@@ -88,7 +88,7 @@
         dimensions: { width: 300, height: 250 },
         scriptUrl: 'https://scripts.hilltopads.net/banner.js?zone=491028&size=300x250',
         creative: {
-          headline: 'Never Pay Full Price For 5★ Hotels',
+          headline: 'Never Pay Full Price For 5â˜… Hotels',
           subhead: 'Insider Club members save an average of $340 per booking in 2026.',
           cta: 'Browse Secret Hotel Rates',
           brand: 'Verified HilltopAds Travel MultiTag'
@@ -211,7 +211,7 @@
       toast.className = 'hta-popunder-badge';
       toast.innerHTML = `
         <div class="hta-popunder-content">
-          <span class="hta-icon">⚡</span>
+          <span class="hta-icon">âš¡</span>
           <div>
             <strong>HilltopAds Zone 1 (Popunder / OnClick) Ready</strong>
             <p>Popunder trigger recorded (Zone: <code>${config.zoneId}</code>). In production, sponsor tab opens in background.</p>
@@ -252,7 +252,7 @@
           </div>
           <div class="hta-ipp-body" id="hta-ipp-click-target">
             <div class="hta-ipp-icon-wrapper">
-              <span class="flight-icon">🛫</span>
+              <span class="flight-icon">ðŸ›«</span>
             </div>
             <div class="hta-ipp-info">
               <h4 class="hta-ipp-title">${config.creative.title}</h4>
@@ -263,7 +263,7 @@
             <a href="${config.directLinkUrl}" target="_blank" rel="noopener sponsored" class="hta-ipp-cta-btn">
               ${config.creative.ctaText} &rarr;
             </a>
-            <span class="hta-network-label">HilltopAds MultiTag Zone 2 • ID: ${config.zoneId}</span>
+            <span class="hta-network-label">HilltopAds MultiTag Zone 2 â€¢ ID: ${config.zoneId}</span>
           </div>
         </div>
       `;
@@ -332,13 +332,13 @@
     container.innerHTML = `
       <div class="hta-banner-wrapper hta-banner-728x90">
         <div class="hta-ad-meta-bar">
-          <span class="hta-ad-label">ADVERTISEMENT • HILLTOPADS MULTITAG ZONE 3</span>
+          <span class="hta-ad-label">ADVERTISEMENT â€¢ HILLTOPADS MULTITAG ZONE 3</span>
           <span class="hta-zone-id">Zone ID: ${config.zoneId}</span>
         </div>
         <div class="hta-banner-content hta-banner-header-flex">
           <div class="hta-banner-brand-badge">
             <span class="hta-luxury-tag">WANDERLUXE VIP DEALS</span>
-            <span class="hta-stars">★★★★★</span>
+            <span class="hta-stars">â˜…â˜…â˜…â˜…â˜…</span>
           </div>
           <div class="hta-banner-center-text">
             <h3 class="hta-banner-title">${config.creative.headline}</h3>
@@ -366,7 +366,7 @@
         <div class="hta-banner-sidebar-content">
           <div class="hta-sidebar-visual">
             <div class="hta-tag-pill">HOTEL FLASH SALE</div>
-            <span class="hotel-icon">🏨</span>
+            <span class="hotel-icon">ðŸ¨</span>
           </div>
           <h4 class="hta-sidebar-title">${config.creative.headline}</h4>
           <p class="hta-sidebar-sub">${config.creative.subhead}</p>
@@ -449,7 +449,7 @@
                 <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
                 Your browser does not support video.
               </video>
-              <span class="hta-slider-tag">Zone 4 MultiTag • ${config.zoneId}</span>
+              <span class="hta-slider-tag">Zone 4 MultiTag â€¢ ${config.zoneId}</span>
             </div>
             <div class="hta-slider-caption">
               <h5>${config.creative.title}</h5>
@@ -567,7 +567,7 @@
       <div class="hta-vast-ad-box">
         <div class="hta-vast-top-bar">
           <div class="hta-vast-badge">
-            <span class="live-dot"></span> ADVERTISEMENT • HILLTOPADS VIDEO VAST (ZONE 6)
+            <span class="live-dot"></span> ADVERTISEMENT â€¢ HILLTOPADS VIDEO VAST (ZONE 6)
           </div>
           <div class="hta-vast-countdown" id="hta-vast-countdown-text">
             Ad: ${remainingTime}s
@@ -718,3 +718,4 @@
   }
 
 })(window, document);
+
