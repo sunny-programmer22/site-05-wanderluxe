@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WanderLuxe - Travel Guides, Hidden Gems & Budget Flights (2026 Edition)</title>
+  <meta name="description" content="Discover curated luxury travel guides, secret off-grid paradises, and verified flight comparison hacks. Save up to 65% on flights and boutique stays in 2026.">
+  <meta name="keywords" content="travel guides 2026, hidden gems, budget flights, flight comparison, travel itinerary planner, luxury travel on a budget">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✈️</text></svg>">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="WanderLuxe - Travel Guides, Hidden Gems & Budget Flights">
+  <meta property="og:description" content="Curated 2026 itineraries, hidden sanctuaries, and secret airfare finder.">
+  <meta property="og:type" content="website">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       TOP ANNOUNCEMENT & UTILITY BAR
+       ======================================================================== -->
+  <aside class="announcement-bar" aria-label="Announcement & Utility">
+    <div class="container announcement-inner">
+      <div class="announcement-text">
+        <span class="badge-gold">2026 ALERT</span>
+        <span>Spring &amp; Summer Error Fares Discovered: <strong>Kyoto, Amalfi Coast &amp; Iceland</strong> up to 60% off!</span>
+      </div>
+      <div class="announcement-tools">
+        <span>🌐 Global Edition</span>
+        <select class="announcement-select" id="currency-selector" aria-label="Currency Selector">
+          <option value="USD">USD ($)</option>
+          <option value="EUR">EUR (€)</option>
+          <option value="GBP">GBP (£)</option>
+          <option value="JPY">JPY (¥)</option>
+          <option value="CAD">CAD ($)</option>
+          <option value="AUD">AUD ($)</option>
+        </select>
+        <span class="no-popunder">🔒 Best Rate Guarantee</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       MAIN NAVIGATION BAR
+       ======================================================================== -->
+  <header class="main-header" role="banner">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="WanderLuxe Homepage">
+        <div class="logo-symbol">
+          <span>✈</span>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">Wander<span>Luxe</span></span>
+          <span class="logo-tagline">Guides &bull; Gems &bull; Airfare</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#destinations" class="nav-link active">Top 10 of 2026</a></li>
+          <li><a href="#flight-widget" class="nav-link">Flight &amp; Hotel Deals</a></li>
+          <li><a href="#hidden-gems" class="nav-link">Hidden Gems</a></li>
+          <li><a href="#itinerary-planner" class="nav-link">Itinerary Planner</a></li>
+          <li><a href="#video-guide" class="nav-link">4K Video Guides</a></li>
+          <li>
+            <a href="#vip-alerts" class="nav-link">
+              Fare Alerts <span class="nav-pill-free">FREE</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Nav Action CTA (Attached to Zone 5 Direct Link) -->
+      <div class="nav-actions">
+        <button type="button" class="btn-header-deal btn-direct-link" id="btn-header-fares" data-ad-zone="direct-link">
+          <span>⚡ Find Secret Fares</span>
+        </button>
+        <button type="button" class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          &#9776;
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       ZONE 3: MULTITAG BANNER - 728x90 HEADER LEADERBOARD AD SLOT
+       ======================================================================== -->
+  <section class="ad-slot-header-container" aria-label="Sponsored Content">
+    <div class="container">
+      <div id="ad-zone-3-header" class="ad-leaderboard-frame" role="complementary" aria-label="Header Advertisement Banner">
+        <!-- ads-config.js renders HilltopAds MultiTag 728x90 here -->
+        <noscript>
+          <div style="padding: 15px; text-align: center; font-size: 13px; color: #475569;">
+            HilltopAds MultiTag Banner (Zone 3 - 728x90 Leaderboard)
+          </div>
+        </noscript>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       HERO DESTINATION SHOWCASE & SEARCH WIDGET
+       ======================================================================== -->
+  <section class="hero-showcase" aria-labelledby="hero-title">
+    <div class="hero-backdrop-glow"></div>
+    <div class="hero-backdrop-sand"></div>
+
+    <div class="container hero-grid">
+      <div class="hero-headline-block">
+        <div class="hero-kicker">
+          <span class="kicker-tag">NEW FOR 2026</span>
+          <span>Earth's Most Enchanting Sanctuaries &amp; Unadvertised Fares</span>
+        </div>
+        <h1 class="hero-title" id="hero-title">
+          Curated Journeys. Hidden Paradises. <em>Budget Flights.</em>
+        </h1>
+        <p class="hero-subtitle">
+          Experience ultra-luxe boutique travel without the luxury markup. Explore vetted itineraries, secret airline fare hacks, and breathtaking off-the-beaten-path escapes.
+        </p>
+
+        <!-- Trust Stats -->
+        <div class="hero-trust-strip">
+          <div class="trust-item">
+            <span class="trust-icon">✈️</span>
+            <span>140,000+ Daily Routes Checked</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">⭐</span>
+            <span>4.9/5 Rating from 85k Explorers</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">🏝️</span>
+            <span>100% Human-Curated Guides</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">💸</span>
+            <span>Avg. $340 Saved per Booking</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====================================================================
+           FLIGHT / HOTEL BOOKING COMPARISON WIDGET MOCKUP
+           ==================================================================== -->
+      <div class="booking-comparison-widget" id="flight-widget">
+        <!-- Widget Tabs -->
+        <div class="widget-tabs-nav" role="tablist">
+          <button type="button" class="widget-tab-btn active" role="tab" aria-selected="true" data-tab="flights">
+            <span class="tab-icon">✈️</span> Flights
+          </button>
+          <button type="button" class="widget-tab-btn" role="tab" aria-selected="false" data-tab="hotels">
+            <span class="tab-icon">🏨</span> Boutique Hotels
+          </button>
+          <button type="button" class="widget-tab-btn" role="tab" aria-selected="false" data-tab="bundles">
+            <span class="tab-icon">🏖️</span> Flight + Stay Bundles
+          </button>
+          <button type="button" class="widget-tab-btn" role="tab" aria-selected="false" data-tab="cars">
+            <span class="tab-icon">🚗</span> Secret Car Rentals
+          </button>
+        </div>
+
+        <!-- Widget Form Body -->
+        <div class="widget-form-body">
+          <form id="booking-search-form" onsubmit="return false;">
+            <div class="form-inputs-row">
+              <!-- Origin -->
+              <div class="input-group">
+                <label for="origin-input" class="input-label">
+                  <span>🛫</span> Departure City
+                </label>
+                <input type="text" id="origin-input" class="input-control" value="New York (JFK)" placeholder="From where?">
+              </div>
+
+              <!-- Destination -->
+              <div class="input-group">
+                <label for="destination-input" class="input-label">
+                  <span>🛬</span> Dream Destination
+                </label>
+                <input type="text" id="destination-input" class="input-control" value="Kyoto &amp; Osaka (KIX)" placeholder="Where to?">
+              </div>
+
+              <!-- Departure Date -->
+              <div class="input-group">
+                <label for="depart-date" class="input-label">
+                  <span>📅</span> Departure
+                </label>
+                <input type="date" id="depart-date" class="input-control" value="2026-05-12">
+              </div>
+
+              <!-- Return Date -->
+              <div class="input-group">
+                <label for="return-date" class="input-label">
+                  <span>📅</span> Return
+                </label>
+                <input type="date" id="return-date" class="input-control" value="2026-05-24">
+              </div>
+
+              <!-- Cabin / Travelers -->
+              <div class="input-group">
+                <label for="passengers-class" class="input-label">
+                  <span>👤</span> Class &amp; Guests
+                </label>
+                <select id="passengers-class" class="input-control">
+                  <option value="1-eco">1 Traveler, Economy</option>
+                  <option value="2-eco" selected>2 Travelers, Economy</option>
+                  <option value="2-prm">2 Travelers, Premium Eco</option>
+                  <option value="2-biz">2 Travelers, Business</option>
+                </select>
+              </div>
+
+              <!-- Search CTA Button (Zone 5 Direct Link Trigger) -->
+              <div class="input-group">
+                <button type="button" class="btn-search-flights btn-direct-link" id="btn-hero-check-flights" data-ad-zone="direct-link">
+                  <span>🔎 Check Flight Deals</span>
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Live Price Comparison Engine Bar -->
+          <div class="comparator-result-bar">
+            <div class="comparator-meta">
+              <strong>Live Airfare Comparison:</strong>
+              <span>New York (JFK) &rarr; Osaka/Kyoto (KIX) &bull; May 12-24, 2026</span>
+            </div>
+            <div class="comparator-rates">
+              <span class="rate-badge">Skyscanner: $820</span>
+              <span class="rate-badge">Kayak: $799</span>
+              <span class="rate-badge">Google Flights: $785</span>
+              <div class="rate-winner">
+                <span>🔥 WanderLuxe Deal:</span>
+                <span class="price-highlight">$518 RT</span>
+                <span class="badge-gold">Save 34%</span>
+              </div>
+              <button type="button" class="btn-claim-winner-deal btn-direct-link" data-ad-zone="direct-link">
+                Unlock Fare &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CATEGORY FILTER STRIP
+       ======================================================================== -->
+  <div class="category-filter-strip">
+    <div class="container">
+      <div class="chips-wrapper" id="category-chips">
+        <button type="button" class="category-chip active" data-filter="all">🌟 All 2026 Hotspots (10)</button>
+        <button type="button" class="category-chip" data-filter="hidden-gem">💎 Secret Hidden Gems</button>
+        <button type="button" class="category-chip" data-filter="budget-luxury">💰 Budget Luxury (Under $80/day)</button>
+        <button type="button" class="category-chip" data-filter="island">🏝️ Islands &amp; Coastal</button>
+        <button type="button" class="category-chip" data-filter="mountains">🏔️ Alpine &amp; Nature</button>
+        <button type="button" class="category-chip" data-filter="cultural">⛩️ Cultural &amp; Historic</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MAIN 2-COLUMN EDITORIAL CONTAINER (MAIN CONTENT + SIDEBAR)
+       ======================================================================== -->
+  <main class="container section-padding" id="destinations">
+    <div class="content-grid-layout">
+
+      <!-- ====================================================================
+           COLUMN 1: TOP 10 DESTINATIONS IN 2026 + ITINERARY + VIDEO GUIDE
+           ==================================================================== -->
+      <div class="main-column-content">
+        <div class="section-editorial-header">
+          <span class="section-tag">2026 CURATED SELECTION</span>
+          <h2 class="section-title">Top 10 Must-Visit Destinations in 2026</h2>
+          <p class="section-desc">
+            Our travel editors spent 12 months auditing flight price drops, local sustainability rules, and off-grid boutique stays to bring you the definitive bucket-list guide.
+          </p>
+        </div>
+
+        <!-- Destination Cards List -->
+        <div class="destinations-cards-list" id="destinations-container">
+
+          <!-- Card 1: Kyoto, Japan -->
+          <article class="destination-card" data-category="cultural">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80" alt="Kyoto Bamboo Forest and ancient temples in Japan" class="card-image" loading="lazy">
+              <span class="card-rank-badge">01</span>
+              <span class="card-flight-pill">Flights from $518 RT</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-meta">
+                <h3 class="card-location-title">Kyoto &amp; The Arashiyama Groves, Japan</h3>
+                <span class="card-rating-tag">⭐ 4.96 (1,420 reviews)</span>
+              </div>
+              <p class="card-description">
+                Immerse yourself in centuries of zen tranquility, moss-covered gardens, and UNESCO wooden shrines. In 2026, newly expanded night-illumination passes offer whisper-quiet temple strolls after daytime crowds dissipate.
+              </p>
+              <div class="card-metrics-row">
+                <div class="metric-col">
+                  <span class="metric-label">Best Window</span>
+                  <span class="metric-value">March-May &bull; Oct-Nov</span>
+                </div>
+                <div class="metric-col">
+                  <span class="metric-label">Daily Budget</span>
+                  <span class="metric-value">$$ ($85 - $130/day)</span>
+                </div>
+                <div class="metric-col">
+                  <span class="metric-label">Vibe &amp; Style</span>
+                  <span class="metric-value">Zen &bull; Historic &bull; Culinary</span>
+                </div>
+              </div>
+              <div class="card-secret-tip">
+                <strong>💡 Secret WanderLuxe Hack:</strong> Arrive at the bamboo path before 6:45 AM, then rent a retro mama-chari bicycle toward the hidden Saga-Toriimoto preservation street.
+              </div>
+              <div class="card-actions-row">
+                <button type="button" class="btn-card-deals btn-direct-link" data-ad-zone="direct-link">
+                  <span>✈️ Check Flight Deals</span>
+                </button>
+                <button type="button" class="btn-card-map btn-direct-link" data-ad-zone="direct-link">
+                  <span>🗺️ Download Offline City Map</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Amalfi Coast, Italy -->
+          <article class="destination-card" data-category="island">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80" alt="Pastel cliffside houses along the Amalfi Coast of Italy" class="card-image" loading="lazy">
+              <span class="card-rank-badge">02</span>
+              <span class="card-flight-pill">Flights from $440 RT</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-meta">
+                <h3 class="card-location-title">Amalfi Coast &amp; Ravello, Italy</h3>
+                <span class="card-rating-tag">⭐ 4.92 (980 reviews)</span>
+              </div>
+              <p class="card-description">
+                Pastel palazzos clinging to sheer limestone precipices above azure Tyrrhenian waters. Enjoy sunset Aperol spritzes in cliffside lemon orchards and dramatic private wooden boat excursions along hidden sea caves.
+              </p>
+              <div class="card-metrics-row">
+                <div class="metric-col">
+                  <span class="metric-label">Best Window</span>
+                  <span class="metric-value">May - June &bull; September</span>
+                </div>
+                <div class="metric-col">
+                  <span class="metric-label">Daily Budget</span>
+                  <span class="metric-value">$$$ ($150 - $270/day)</span>
+                </div>
+                <div class="metric-col">
+                  <span class="metric-label">Vibe &amp; Style</span>
+                  <span class="metric-value">Romance &bull; Mediterranean Luxe</span>
+                </div>
+              </div>
+              <div class="card-secret-tip">
+                <strong>💡 Secret WanderLuxe Hack:</strong> Skip Positano’s pricey beach clubs. Hike down the "Path of the Gods" to Fiordo di Furore, a secluded natural fjord with free cliffside swimming.
+              </div>
+              <div class="card-actions-row">
+                <button type="button" class="btn-card-deals btn-direct-link" data-ad-zone="direct-link">
+                  <span>✈️ Check Flight Deals</span>
+                </button>
+                <button type="button" class="btn-card-map btn-direct-link" data-ad-zone="direct-link">
+                  <span>🗺️ Download Offline City Map</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Banff & Lake Louise, Canada -->
+          <article class="destination-card" data-category="mountains">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=800&q=80" alt="Turquoise waters of Lake Louise and Moraine Lake in Banff Canada" class="card-image" loading="lazy">
+              <span class="card-rank-badge">03</span>
+              <span class="card-flight-pill">Flights from $295 RT</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-meta">
+                <h3 class="card-location-title">Banff &amp; Lake Louise, Canadian Rockies</h3>
+                <span class="card-rating-tag">⭐ 4.98 (2,100 reviews)</span>
+              </div>
+              <p class="card-description">
+                Luminescent turquoise glacial lakes set against soaring granite peaks and pristine coniferous forests. Whether canoeing across mirror-like Lake Louise or soaking in Banff Upper Hot Springs, the Canadian wilderness is unmatched.
+              </p>
+              <div class="card-metrics-row">
+                <div class="metric-col">
+                  <span class="metric-label">Best Window</span>
+                  <span class="metric-value">June-August &bull; Dec-March</span>
+                </div>
+                <div class="metric-col">
+                  <span class="metric-label">Daily Budget</span>
+                  <span class="metric-value">$$ ($110 - $190/day)</span>
+                </div>
+                <div class="metric-col">
+                  <span class="metric-label">Vibe &amp; Style</span>
+                  <span class="metric-value">Wilderness &bull; Hiking &bull; Alpine</span>
+                </div>
+              </div>
+              <div class="card-secret-tip">
+                <strong>💡 Secret WanderLuxe Hack:</strong> Book the early morning Parks Canada shuttle precisely 48 hours prior at 8:00 AM MST to secure front-row sunrise access to Moraine Lake.
+              </div>
+              <div class="card-actions-row">
+                <button type="button" class="btn-card-deals btn-direct-link" data-ad-zone="direct-link">
+                  <span>✈️ Check Flight Deals</span>
+                </button>
+                <button type="button" class="btn-card-map btn-direct-link" data-ad-zone="direct-link">
+                  <span>🗺️ Download Offline City Map</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Santorini, Greece -->
+          <article class="destination-card" data-category="island">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=800&q=80" alt="White washed Santorini villas and blue Aegean Sea" class="card-image" loading="lazy">
+              <span class="card-rank-badge">04</span>
+              <span class="card-flight-pill">Flights from $480 RT</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-meta">
+                <h3 class="card-location-title">Santorini &amp; The Cycladic Isles, Greece</h3>
+                <span class="card-rating-tag">⭐ 4.91 (1,750 reviews)</span>
+              </div>
+              <p class="card-description">
+                Iconic cobalt-blue domes perched above sun-bleached volcanic cliffs. Experience volcanic winery tours in Megalochori, swim in the red beaches of Akrotiri, and witness legendary caldera sunsets from private boutique verandas.
+              </p>
+              <div class="card-metrics-row">
+                <div class="metric-col">
+                  <span class="metric-label">Best Window</span>
+                  <span class="metric-value">April-May &bull; Sept-October</span>
+                </div>
+                <div class="metric-col">
+                  <span class="metric-label">Daily Budget</span>
+                  <span class="metric-value">$$$ ($140 - $250/day)</span>
+                </div>
+                <div class="metric-col">
+                  <span class="metric-label">Vibe &amp; Style</span>
+                  <span class="metric-value">Island Romance &bull; Wine &bull; Views</span>
+                </div>
+              </div>
+              <div class="card-secret-tip">
+                <strong>💡 Secret WanderLuxe Hack:</strong> Base your stay in Imerovigli rather than Oia. You'll get the highest caldera elevation, complete quiet, and 45% cheaper boutique suites.
+              </div>
+              <div class="card-actions-row">
+                <button type="button" class="btn-card-deals btn-direct-link" data-ad-zone="direct-link">
+                  <span>✈️ Check Flight Deals</span>
+                </button>
+                <button type="button" class="btn-card-map btn-direct-link" data-ad-zone="direct-link">
+                  <span>🗺️ Download Offline City Map</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Reykjanes & Arctic Fjords, Iceland -->
+          <article class="destination-card" data-category="mountains">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80" alt="Northern lights dancing over volcanic landscape in Iceland" class="card-image" loading="lazy">
+              <span class="card-rank-badge">05</span>
+              <span class="card-flight-pill">Flights from $360 RT</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-meta">
+                <h3 class="card-location-title">Reykjanes &amp; Arctic Fjords, Iceland</h3>
+                <span class="card-rating-tag">⭐ 4.95 (840 reviews)</span>
+              </div>
+              <p class="card-description">
+                A primordial wonderland of steaming geothermal geysers, basalt column canyons, and cascading thundering waterfalls. In winter 2026, Solar Cycle 25 delivers peak Northern Lights aurora activity across the sub-Arctic skies.
+              </p>
+              <div class="card-metrics-row">
+                <div class="metric-col">
+                  <span class="metric-label">Best Window</span>
+                  <span class="metric-value">Sept-March (Auroras) &bull; June-Aug</span>
+                </div>
+                <div class="metric-col">
+                  <span class="metric-label">Daily Budget</span>
+                  <span class="metric-value">$$$ ($135 - $220/day)</span>
+                </div>
+                <div class="metric-col">
+                  <span class="metric-label">Vibe &amp; Style</span>
+                  <span class="metric-value">Geothermal &bull; Aurora &bull; Solitude</span>
+                </div>
+              </div>
+              <div class="card-secret-tip">
+                <strong>💡 Secret WanderLuxe Hack:</strong> Visit the free geothermal steam valley of Reykjadalur in Hveragerði to bathe directly in a naturally warm mountain river.
+              </div>
+              <div class="card-actions-row">
+                <button type="button" class="btn-card-deals btn-direct-link" data-ad-zone="direct-link">
+                  <span>✈️ Check Flight Deals</span>
+                </button>
+                <button type="button" class="btn-card-map btn-direct-link" data-ad-zone="direct-link">
+                  <span>🗺️ Download Offline City Map</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Chefchaouen, Morocco -->
+          <article class="destination-card" data-category="budget-luxury">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80" alt="The Blue Pearl Chefchaouen Morocco street alley" class="card-image" loading="lazy">
+              <span class="card-rank-badge">06</span>
+              <span class="card-flight-pill">Flights from $395 RT</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-meta">
+                <h3 class="card-location-title">Chefchaouen &amp; The Rif Valley, Morocco</h3>
+                <span class="card-rating-tag">⭐ 4.89 (1,120 reviews)</span>
+              </div>
+              <p class="card-description">
+                Known as "The Blue Pearl", this mountain haven features cobblestone pathways painted in a hundred shades of cobalt and cornflower blue. Enjoy rooftop tagines, handmade wool crafts, and fresh mint tea while surrounded by rugged peaks.
+              </p>
+              <div class="card-metrics-row">
+                <div class="metric-col">
+                  <span class="metric-label">Best Window</span>
+                  <span class="metric-value">March - May &bull; October</span>
+                </div>
+                <div class="metric-col">
+                  <span class="metric-label">Daily Budget</span>
+                  <span class="metric-value">$ ($35 - $65/day)</span>
+                </div>
+                <div class="metric-col">
+                  <span class="metric-label">Vibe &amp; Style</span>
+                  <span class="metric-value">Boho &bull; Photography &bull; Artisanal</span>
+                </div>
+              </div>
+              <div class="card-secret-tip">
+                <strong>💡 Secret WanderLuxe Hack:</strong> Stay at a restored 18th-century riad inside the Medina walls; traditional 4-course banquet dinners are often under $14 per person!
+              </div>
+              <div class="card-actions-row">
+                <button type="button" class="btn-card-deals btn-direct-link" data-ad-zone="direct-link">
+                  <span>✈️ Check Flight Deals</span>
+                </button>
+                <button type="button" class="btn-card-map btn-direct-link" data-ad-zone="direct-link">
+                  <span>🗺️ Download Offline City Map</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 7: Queenstown & Milford Sound, New Zealand -->
+          <article class="destination-card" data-category="mountains">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1507699622108-4be3abd695ad?auto=format&fit=crop&w=800&q=80" alt="Milford Sound fjord in New Zealand" class="card-image" loading="lazy">
+              <span class="card-rank-badge">07</span>
+              <span class="card-flight-pill">Flights from $740 RT</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-meta">
+                <h3 class="card-location-title">Queenstown &amp; Fiordland, New Zealand</h3>
+                <span class="card-rating-tag">⭐ 4.97 (1,890 reviews)</span>
+              </div>
+              <p class="card-description">
+                The adventure capital of the Southern Hemisphere nestled beside glacial Lake Wakatipu. From helicopter glacier landings and world-class Pinot Noir tastings in Central Otago to primordial fjords in Fiordland National Park.
+              </p>
+              <div class="card-metrics-row">
+                <div class="metric-col">
+                  <span class="metric-label">Best Window</span>
+                  <span class="metric-value">Dec-Feb (Summer) &bull; July-Aug (Ski)</span>
+                </div>
+                <div class="metric-col">
+                  <span class="metric-label">Daily Budget</span>
+                  <span class="metric-value">$$ ($115 - $195/day)</span>
+                </div>
+                <div class="metric-col">
+                  <span class="metric-label">Vibe &amp; Style</span>
+                  <span class="metric-value">Adrenaline &bull; Wine &bull; Epic Vistas</span>
+                </div>
+              </div>
+              <div class="card-secret-tip">
+                <strong>💡 Secret WanderLuxe Hack:</strong> Choose an overnight kayak excursion into Doubtful Sound rather than Milford Sound; it receives 90% fewer tour buses and boasts wild fur seals.
+              </div>
+              <div class="card-actions-row">
+                <button type="button" class="btn-card-deals btn-direct-link" data-ad-zone="direct-link">
+                  <span>✈️ Check Flight Deals</span>
+                </button>
+                <button type="button" class="btn-card-map btn-direct-link" data-ad-zone="direct-link">
+                  <span>🗺️ Download Offline City Map</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 8: Salar de Uyuni & Atacama, Bolivia / Chile -->
+          <article class="destination-card" data-category="hidden-gem">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1518182170546-07661fd94144?auto=format&fit=crop&w=800&q=80" alt="Salar de Uyuni salt flats reflection sky in Bolivia" class="card-image" loading="lazy">
+              <span class="card-rank-badge">08</span>
+              <span class="card-flight-pill">Flights from $580 RT</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-meta">
+                <h3 class="card-location-title">Salar de Uyuni &amp; Atacama, Bolivia &amp; Chile</h3>
+                <span class="card-rating-tag">⭐ 4.93 (670 reviews)</span>
+              </div>
+              <p class="card-description">
+                Stand on the world's largest natural mirror where salt crusts reflect crystal blue skies by day and the Milky Way by night. Pair with the Mars-like geothermal geysers and flamingos of the high-altitude Atacama desert.
+              </p>
+              <div class="card-metrics-row">
+                <div class="metric-col">
+                  <span class="metric-label">Best Window</span>
+                  <span class="metric-value">Jan-April (Mirror) &bull; May-Nov (Stars)</span>
+                </div>
+                <div class="metric-col">
+                  <span class="metric-label">Daily Budget</span>
+                  <span class="metric-value">$ ($50 - $90/day)</span>
+                </div>
+                <div class="metric-col">
+                  <span class="metric-label">Vibe &amp; Style</span>
+                  <span class="metric-value">Otherworldly &bull; Astronomy &bull; Surreal</span>
+                </div>
+              </div>
+              <div class="card-secret-tip">
+                <strong>💡 Secret WanderLuxe Hack:</strong> Book a private 3-day 4WD expedition departing from Tupiza rather than Uyuni to enter the flats from the southern uncrowded reserve.
+              </div>
+              <div class="card-actions-row">
+                <button type="button" class="btn-card-deals btn-direct-link" data-ad-zone="direct-link">
+                  <span>✈️ Check Flight Deals</span>
+                </button>
+                <button type="button" class="btn-card-map btn-direct-link" data-ad-zone="direct-link">
+                  <span>🗺️ Download Offline City Map</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 9: Raja Ampat, Indonesia -->
+          <article class="destination-card" data-category="island">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=800&q=80" alt="Raja Ampat green karst islands and turquoise lagoon Indonesia" class="card-image" loading="lazy">
+              <span class="card-rank-badge">09</span>
+              <span class="card-flight-pill">Flights from $650 RT</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-meta">
+                <h3 class="card-location-title">Raja Ampat Archipelago, Indonesia</h3>
+                <span class="card-rating-tag">⭐ 4.99 (510 reviews)</span>
+              </div>
+              <p class="card-description">
+                The global epicentre of marine biodiversity. Over 1,500 jungle-clad karst islands rise like emerald mushrooms from glowing sapphire waters home to manta rays, pygmy seahorses, and pristine coral barrier gardens.
+              </p>
+              <div class="card-metrics-row">
+                <div class="metric-col">
+                  <span class="metric-label">Best Window</span>
+                  <span class="metric-value">October - April</span>
+                </div>
+                <div class="metric-col">
+                  <span class="metric-label">Daily Budget</span>
+                  <span class="metric-value">$$ ($75 - $150/day homestay)</span>
+                </div>
+                <div class="metric-col">
+                  <span class="metric-label">Vibe &amp; Style</span>
+                  <span class="metric-value">Remote Sanctuary &bull; Marine Safari</span>
+                </div>
+              </div>
+              <div class="card-secret-tip">
+                <strong>💡 Secret WanderLuxe Hack:</strong> Stay at local over-water Papuan homestays on Kri Island; you can snorkel off your porch with blacktip reef sharks before breakfast.
+              </div>
+              <div class="card-actions-row">
+                <button type="button" class="btn-card-deals btn-direct-link" data-ad-zone="direct-link">
+                  <span>✈️ Check Flight Deals</span>
+                </button>
+                <button type="button" class="btn-card-map btn-direct-link" data-ad-zone="direct-link">
+                  <span>🗺️ Download Offline City Map</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 10: Val di Funes & Dolomites, Italy -->
+          <article class="destination-card" data-category="mountains">
+            <div class="card-media">
+              <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=800&q=80" alt="Val di Funes church and majestic Dolomites mountains Italy" class="card-image" loading="lazy">
+              <span class="card-rank-badge">10</span>
+              <span class="card-flight-pill">Flights from $420 RT</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-meta">
+                <h3 class="card-location-title">Val di Funes &amp; The Dolomites, Italy</h3>
+                <span class="card-rating-tag">⭐ 4.96 (1,340 reviews)</span>
+              </div>
+              <p class="card-description">
+                Gargantuan jagged dolomite needles towering above idyllic alpine meadows and timber mountain rifugios. Experience South Tyrolean gastronomy, high-altitude via ferratas, and golden hour alpenglow reflections.
+              </p>
+              <div class="card-metrics-row">
+                <div class="metric-col">
+                  <span class="metric-label">Best Window</span>
+                  <span class="metric-value">June - July &bull; Mid-Sept - Oct</span>
+                </div>
+                <div class="metric-col">
+                  <span class="metric-label">Daily Budget</span>
+                  <span class="metric-value">$$ ($95 - $175/day)</span>
+                </div>
+                <div class="metric-col">
+                  <span class="metric-label">Vibe &amp; Style</span>
+                  <span class="metric-value">Alpine Elegance &bull; Via Ferrata &bull; Cuisine</span>
+                </div>
+              </div>
+              <div class="card-secret-tip">
+                <strong>💡 Secret WanderLuxe Hack:</strong> Rent an e-bike in Ortisei for the morning ride up to Seceda ridge, followed by freshly baked strudel at Malga Geisler hut.
+              </div>
+              <div class="card-actions-row">
+                <button type="button" class="btn-card-deals btn-direct-link" data-ad-zone="direct-link">
+                  <span>✈️ Check Flight Deals</span>
+                </button>
+                <button type="button" class="btn-card-map btn-direct-link" data-ad-zone="direct-link">
+                  <span>🗺️ Download Offline City Map</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- ====================================================================
+             INTERACTIVE TRAVEL ITINERARY PLANNER
+             ==================================================================== -->
+        <section class="itinerary-planner-section" id="itinerary-planner" aria-labelledby="planner-heading">
+          <div class="section-editorial-header">
+            <span class="section-tag">CUSTOM TRIP GENERATOR</span>
+            <h3 class="section-title" id="planner-heading">Interactive 2026 Itinerary Planner</h3>
+            <p class="section-desc">
+              Select your dream escape, preferred pacing, and travel style to generate a day-by-day tailored itinerary complete with timing, secret spots, and estimated expenses.
+            </p>
+          </div>
+
+          <!-- Planner Form Controls -->
+          <div class="planner-controls-grid">
+            <div class="planner-select-box">
+              <label for="planner-dest-select" class="planner-label">Choose Destination</label>
+              <select id="planner-dest-select" class="planner-select">
+                <option value="kyoto">Kyoto &amp; Arashiyama, Japan</option>
+                <option value="amalfi">Amalfi Coast &amp; Ravello, Italy</option>
+                <option value="banff">Banff &amp; Lake Louise, Canada</option>
+                <option value="santorini">Santorini &amp; Cyclades, Greece</option>
+                <option value="iceland">Reykjanes &amp; Arctic Fjords, Iceland</option>
+                <option value="morocco">Chefchaouen, Morocco</option>
+              </select>
+            </div>
+
+            <div class="planner-select-box">
+              <label for="planner-duration-select" class="planner-label">Trip Duration</label>
+              <select id="planner-duration-select" class="planner-select">
+                <option value="3">3-Day Highlights Weekend</option>
+                <option value="7" selected>7-Day Complete Immersion</option>
+                <option value="14">14-Day Grand Expedition</option>
+              </select>
+            </div>
+
+            <div class="planner-select-box">
+              <label for="planner-style-select" class="planner-label">Travel Style</label>
+              <select id="planner-style-select" class="planner-select">
+                <option value="romantic">Romantic Boutique ($$$)</option>
+                <option value="budget" selected>Smart Budget &amp; Hidden Gems ($$)</option>
+                <option value="adventure">Outdoor Adventure &amp; Nature ($$)</option>
+                <option value="luxury">Ultra-Luxe VIP Experience ($$$$)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Generated Timeline Card -->
+          <div class="itinerary-output-card" id="itinerary-output">
+            <div class="itinerary-header-summary">
+              <div class="itinerary-title-badge">
+                <span id="itinerary-output-title">7-Day Curated Kyoto &amp; Arashiyama Expedition</span>
+              </div>
+              <div class="itinerary-cost-pill">
+                <span>Est. Total: <strong id="itinerary-output-cost">$980 / person</strong></span>
+              </div>
+            </div>
+
+            <!-- Timeline items populated dynamically by script -->
+            <div class="itinerary-days-timeline" id="itinerary-timeline-container">
+              <!-- Dynamically populated -->
+            </div>
+
+            <div class="itinerary-actions-bar">
+              <div style="font-size: 0.85rem; color: #475569;">
+                ⭐ Includes offline navigation pins, secret reservation links, and metro card hacks.
+              </div>
+              <button type="button" class="btn-search-flights btn-direct-link" id="btn-itinerary-book-deals" data-ad-zone="direct-link">
+                <span>⚡ Unlock Booking Discounts for this Route &rarr;</span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====================================================================
+             ZONE 6: VIDEO VAST INTEGRATION & 4K DESTINATION VIDEO
+             ==================================================================== -->
+        <section class="travel-video-section" id="video-guide" aria-labelledby="video-guide-heading">
+          <div class="section-editorial-header">
+            <span class="section-tag">CINEMATIC DESTINATION GUIDE</span>
+            <h3 class="section-title" id="video-guide-heading">4K Ultra-HD Aerial Journey: Kyoto &amp; Amalfi</h3>
+            <p class="section-desc">
+              Experience the sights, sounds, and secrets of our top 2026 selections. Powered by HilltopAds Video VAST (Zone 6) monetization technology.
+            </p>
+          </div>
+
+          <!-- Video Player Container with Custom Poster and VAST Overlay Hook -->
+          <div class="video-player-container" id="travel-guide-video-wrapper">
+            <!-- Native HTML5 Video Element -->
+            <video id="travel-guide-video" class="video-native-element" preload="metadata" poster="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80">
+              <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+
+            <!-- Video Poster / Play Cover Layer -->
+            <div class="video-poster-cover" id="video-custom-cover">
+              <button type="button" class="btn-play-hero-video" id="btn-play-guide-video" aria-label="Play 4K Travel Video">
+                &#9658;
+              </button>
+              <div class="video-cover-text">
+                <h4>Watch 4K Cinematic Travel Showcase</h4>
+                <p>Click to stream with HilltopAds VAST Pre-Roll Sponsorship Integration</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- ====================================================================
+           COLUMN 2: SIDEBAR (MONETIZATION HUB & DIRECT LINK OFFERS)
+           ==================================================================== -->
+      <aside class="sidebar-wrapper" role="complementary" aria-label="Travel Resources and Deals">
+
+        <!-- ZONE 3: MULTITAG BANNER (300x250 BOOKING SIDEBAR AD SLOT) -->
+        <div class="sidebar-card-box" style="padding: 12px; background: #ffffff;">
+          <div id="ad-zone-3-sidebar" class="ad-slot-sidebar-container" aria-label="Sidebar Advertisement Banner">
+            <!-- ads-config.js renders HilltopAds MultiTag 300x250 here -->
+            <noscript>
+              <div style="padding: 20px; text-align: center; font-size: 13px; color: #475569;">
+                HilltopAds MultiTag Banner (Zone 3 - 300x250 Medium Rectangle)
+              </div>
+            </noscript>
+          </div>
+        </div>
+
+        <!-- SECRET FLIGHT DEALS LIVE TICKER WIDGET -->
+        <div class="sidebar-card-box" id="vip-alerts">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+            <h4 style="font-size: 1.05rem; font-weight: 700; color: #0f172a;">🚨 Live Error Fares</h4>
+            <span class="badge-gold">UPDATED 4m AGO</span>
+          </div>
+          <p style="font-size: 0.82rem; color: #64748b; margin-bottom: 12px;">
+            Unpublished airline mistake fares tracked in real time. Valid for 24-48 hours only:
+          </p>
+
+          <div class="flight-ticker-list">
+            <div class="ticker-item">
+              <span class="ticker-route">🛫 LAX &rarr; Tokyo (NRT)</span>
+              <span class="ticker-price">$412 RT</span>
+            </div>
+            <div class="ticker-item">
+              <span class="ticker-route">🛫 JFK &rarr; Rome (FCO)</span>
+              <span class="ticker-price">$385 RT</span>
+            </div>
+            <div class="ticker-item">
+              <span class="ticker-route">🛫 SFO &rarr; Bali (DPS)</span>
+              <span class="ticker-price">$548 RT</span>
+            </div>
+            <div class="ticker-item">
+              <span class="ticker-route">🛫 LHR &rarr; Reykjavik (KEF)</span>
+              <span class="ticker-price">£79 RT</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 16px;">
+            <button type="button" class="btn-search-flights btn-direct-link" id="btn-sidebar-flight-deals" style="width: 100%; justify-content: center;" data-ad-zone="direct-link">
+              <span>⚡ View All Active Error Fares</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- DOWNLOAD OFFLINE CITY MAP & TRAVEL GUIDE (ZONE 5 DIRECT LINK) -->
+        <div class="sidebar-card-box map-download-box">
+          <span class="map-badge-tag">FREE 2026 ASSET</span>
+          <h4 class="map-download-title">Download Offline City Maps &amp; Secret Spots</h4>
+          <p class="map-download-desc">
+            Complete high-res offline maps for Tokyo, Kyoto, Amalfi, Santorini &amp; Banff. Never get stranded without cell signal. Includes secret food alleys.
+          </p>
+          <button type="button" class="btn-download-map btn-direct-link" id="btn-download-offline-map" data-ad-zone="direct-link">
+            <span>📥 Download Offline City Map (PDF)</span>
+          </button>
+        </div>
+
+        <!-- LIVE TRAVEL BUDGET CALCULATOR -->
+        <div class="sidebar-card-box budget-calculator-box">
+          <h4 style="font-size: 1.05rem; font-weight: 700; color: #0f172a; margin-bottom: 6px;">
+            🧮 2026 Travel Budget Estimator
+          </h4>
+          <p style="font-size: 0.8rem; color: #64748b;">
+            Calculate realistic on-the-ground daily spend including lodging, meals, and transport.
+          </p>
+
+          <div class="budget-calc-inputs">
+            <div>
+              <label for="calc-days" style="font-size: 0.75rem; font-weight: 700; color: #475569;">Trip Length (Days)</label>
+              <input type="number" id="calc-days" class="input-control" value="7" min="1" max="60" style="padding: 8px 12px; margin-top: 4px;">
+            </div>
+
+            <div>
+              <label for="calc-style" style="font-size: 0.75rem; font-weight: 700; color: #475569;">Lodging Standard</label>
+              <select id="calc-style" class="input-control" style="padding: 8px 12px; margin-top: 4px;">
+                <option value="50">Boutique Hostel / Capsule ($50/day)</option>
+                <option value="120" selected>3-4★ Boutique Hotel ($120/day)</option>
+                <option value="280">5★ Luxury Villa / Resort ($280/day)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="budget-calc-output">
+            <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 700; color: #64748b;">Estimated Total</span>
+            <div class="budget-total-num" id="calc-total-result">$1,190</div>
+            <small style="color: #059669; font-weight: 600;">✨ You save ~$340 using WanderLuxe Secret Links</small>
+          </div>
+        </div>
+
+        <!-- ADVERTISING & SPONSOR DISCLOSURE -->
+        <div class="sidebar-card-box" style="background: #f8fafc; font-size: 0.76rem; color: #64748b; line-height: 1.5;">
+          <strong style="color: #334155;">HilltopAds Network Monetization:</strong>
+          <p style="margin-top: 4px;">
+            WanderLuxe partners with premium global advertising networks including HilltopAds to provide verified multi-zone promotional flight deals, In-Page Push notifications, and direct airfare discounts.
+          </p>
+        </div>
+
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       ZONE 2: IN-PAGE PUSH (IPP) MULTITAG CONTAINER
+       ======================================================================== -->
+  <div id="ad-zone-2-ipp" class="hta-ipp-container hta-ipp-bottom-right" aria-live="polite">
+    <!-- ads-config.js renders HilltopAds In-Page Push (IPP) MultiTag here -->
+  </div>
+
+  <!-- ========================================================================
+       ZONE 4: VIDEO SLIDER MULTITAG CONTAINER
+       ======================================================================== -->
+  <div id="ad-zone-4-slider" class="hta-video-slider-container" aria-label="Featured Video Slider">
+    <!-- ads-config.js renders HilltopAds Video Slider MultiTag here -->
+  </div>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="main-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Story -->
+        <div class="footer-brand">
+          <h3>Wander<span>Luxe</span></h3>
+          <p>
+            The world's leading boutique travel journal dedicated to authentic hidden gems, sustainable cultural immersions, and data-driven flight price discovery.
+          </p>
+          <div class="partner-badges-strip">
+            <span class="network-badge">HilltopAds MultiTag Verified</span>
+            <span class="network-badge">IATA Accredited Data</span>
+            <span class="network-badge">SSL 256-Bit Secured</span>
+          </div>
+        </div>
+
+        <!-- Curated Destinations -->
+        <div class="footer-col">
+          <h4>2026 Destinations</h4>
+          <ul class="footer-links-list">
+            <li><a href="#destinations">Kyoto &amp; Arashiyama</a></li>
+            <li><a href="#destinations">Amalfi Coast &amp; Ravello</a></li>
+            <li><a href="#destinations">Banff &amp; Lake Louise</a></li>
+            <li><a href="#destinations">Santorini Blue Domes</a></li>
+            <li><a href="#destinations">Iceland Arctic Fjords</a></li>
+            <li><a href="#destinations">Chefchaouen Blue Pearl</a></li>
+          </ul>
+        </div>
+
+        <!-- Popular Flight Routes -->
+        <div class="footer-col">
+          <h4>Popular Route Deals</h4>
+          <ul class="footer-links-list">
+            <li><a href="#flight-widget" class="btn-direct-link" data-ad-zone="direct-link">New York &rarr; Tokyo ($518)</a></li>
+            <li><a href="#flight-widget" class="btn-direct-link" data-ad-zone="direct-link">London &rarr; Reykjavik (£79)</a></li>
+            <li><a href="#flight-widget" class="btn-direct-link" data-ad-zone="direct-link">Los Angeles &rarr; Bali ($548)</a></li>
+            <li><a href="#flight-widget" class="btn-direct-link" data-ad-zone="direct-link">Toronto &rarr; Calgary ($180)</a></li>
+            <li><a href="#flight-widget" class="btn-direct-link" data-ad-zone="direct-link">Sydney &rarr; Queenstown ($390)</a></li>
+          </ul>
+        </div>
+
+        <!-- HilltopAds & Legal -->
+        <div class="footer-col">
+          <h4>Publisher &amp; Monetization</h4>
+          <p style="font-size: 0.82rem; color: #94a3b8; line-height: 1.6; margin-bottom: 12px;">
+            Official HilltopAds integration featuring Zone 1 Popunder, Zone 2 In-Page Push, Zone 3 MultiTag Banners, Zone 4 Video Slider, Zone 5 Direct Link, and Zone 6 Video VAST tags.
+          </p>
+          <ul class="footer-links-list">
+            <li><a href="#privacy">Privacy &amp; Cookie Policy</a></li>
+            <li><a href="#affiliate">Advertising Disclosure</a></li>
+            <li><a href="#terms">Terms of Travel Service</a></li>
+            <li><a href="#contact">Contact Editorial Team</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 WanderLuxe Media Ltd. All rights reserved.
+        </div>
+        <div class="footer-disclaimer">
+          Fares, hotel rates, and availability shown are updated continuously and are subject to airline and partner changes. WanderLuxe earns affiliate compensation from selected sponsor links.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       HILLTOPADS MONETIZATION SUITE SCRIPT
+       ======================================================================== -->
+  <script src="ads-config.js"></script>
+
+  <!-- ========================================================================
+       PAGE INTERACTIVITY SCRIPT (TABS, FILTERS, ITINERARY GENERATOR, CALCULATOR)
+       ======================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      'use strict';
+
+      // 1. Mobile Menu Toggle
+      const mobileToggle = document.getElementById('mobile-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      if (mobileToggle && navLinks) {
+        mobileToggle.addEventListener('click', function () {
+          const isFlex = navLinks.style.display === 'flex';
+          navLinks.style.display = isFlex ? 'none' : 'flex';
+          if (!isFlex) {
+            navLinks.style.flexDirection = 'column';
+            navLinks.style.position = 'absolute';
+            navLinks.style.top = '74px';
+            navLinks.style.left = '0';
+            navLinks.style.width = '100%';
+            navLinks.style.background = '#ffffff';
+            navLinks.style.padding = '20px';
+            navLinks.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
+            navLinks.style.zIndex = '999';
+          }
+        });
+      }
+
+      // 2. Booking Widget Tab Switching
+      const tabButtons = document.querySelectorAll('.widget-tab-btn');
+      tabButtons.forEach(btn => {
+        btn.addEventListener('click', function () {
+          tabButtons.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          const tab = this.dataset.tab;
+          const originInput = document.getElementById('origin-input');
+          const destInput = document.getElementById('destination-input');
+
+          if (tab === 'hotels') {
+            if (originInput) originInput.placeholder = 'City or Landmark';
+            if (originInput) originInput.value = 'Kyoto, Japan';
+            if (destInput) destInput.placeholder = 'Area preference';
+            if (destInput) destInput.value = 'Gion District';
+          } else if (tab === 'flights') {
+            if (originInput) originInput.value = 'New York (JFK)';
+            if (destInput) destInput.value = 'Kyoto & Osaka (KIX)';
+          }
+        });
+      });
+
+      // 3. Category Filter Chips
+      const filterChips = document.querySelectorAll('.category-chip');
+      const cards = document.querySelectorAll('.destination-card');
+
+      filterChips.forEach(chip => {
+        chip.addEventListener('click', function () {
+          filterChips.forEach(c => c.classList.remove('active'));
+          this.classList.add('active');
+          const filter = this.dataset.filter;
+
+          cards.forEach(card => {
+            if (filter === 'all' || card.dataset.category === filter) {
+              card.style.display = 'grid';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // 4. Dynamic Itinerary Planner Generator
+      const destSelect = document.getElementById('planner-dest-select');
+      const durationSelect = document.getElementById('planner-duration-select');
+      const styleSelect = document.getElementById('planner-style-select');
+      const timelineContainer = document.getElementById('itinerary-timeline-container');
+      const titleElem = document.getElementById('itinerary-output-title');
+      const costElem = document.getElementById('itinerary-output-cost');
+
+      const ITINERARY_DATA = {
+        kyoto: {
+          name: 'Kyoto & Arashiyama',
+          baseCostPerDay: 140,
+          days: [
+            { day: 'Day 1', title: 'Arrival & Gion Twilight Lantern Walk', desc: 'Check in to a Machiya townhouse, sip matcha near Shirakawa canal, and experience traditional kaiseki.' },
+            { day: 'Day 2', title: 'Arashiyama Bamboo Grove & Sagano Scenic Railway', desc: 'Early 6:30 AM arrival at bamboo path, visit Tenryu-ji Zen garden, followed by riverside soba noodles.' },
+            { day: 'Day 3', title: 'Fushimi Inari Torii Gates & Sake Tasting in Fushimi', desc: 'Climb 1,000 vermillion torii gates at daybreak, tour local centuries-old sake breweries.' },
+            { day: 'Day 4', title: 'Kinkaku-ji (Golden Pavilion) & Ryoan-ji Rock Garden', desc: 'Marvel at mirror pond reflections and meditative dry landscape gardens.' },
+            { day: 'Day 5', title: 'Uji Matcha Tea Farms & Byodo-in Phoenix Hall', desc: 'Short 25-minute train ride to the matcha capital of Japan; craft your own ceremonial bowl.' },
+            { day: 'Day 6', title: 'Nishiki Market Culinary Safari & Philosopher\'s Path', desc: 'Sample grilled unagi, dashi omelets, and stroll cherry blossom canals toward Ginkaku-ji.' },
+            { day: 'Day 7', title: 'Kiyomizu-dera Wooden Terrace Sunset & Farewell Dinner', desc: 'Spectacular panoramas over Kyoto valley, followed by private tea ceremony.' }
+          ]
+        },
+        amalfi: {
+          name: 'Amalfi Coast & Ravello',
+          baseCostPerDay: 230,
+          days: [
+            { day: 'Day 1', title: 'Naples Arrival & Scenic Drive to Ravello', desc: 'Check into cliffside villa with sweeping Tyrrhenian sea vistas, fresh wood-fired pizza.' },
+            { day: 'Day 2', title: 'Path of the Gods (Sentiero degli Dei) Cliff Hike', desc: 'Hike ancient mule trails from Bomerano to Nocelle with jaw-dropping 500m drops.' },
+            { day: 'Day 3', title: 'Private Wooden Gozzo Boat Tour to Capri & Blue Grotto', desc: 'Cruise hidden sea grottoes, swim in crystal sapphire coves, limoncello tasting.' },
+            { day: 'Day 4', title: 'Positano Boutiques & Sunset Aperitivo at Franco\'s Bar', desc: 'Explore vertical pastel alleys, artisan leather sandals, and sunset cliffside cocktails.' },
+            { day: 'Day 5', title: 'Fiordo di Furore Secluded Beach & Emerald Cave', desc: 'Swim in Italy’s most dramatic natural bridge fjord away from standard ferries.' },
+            { day: 'Day 6', title: 'Villa Cimbrone Infinity Terrace & Lemon Grove Lunch', desc: 'Marvel at classical marble busts suspended over the infinite blue horizon in Ravello.' },
+            { day: 'Day 7', title: 'Ceramics in Vietri sul Mare & Farewell Seafood Feast', desc: 'Pick up hand-painted tiles and savor fresh salt-crusted sea bass by the harbor.' }
+          ]
+        },
+        banff: {
+          name: 'Banff & Canadian Rockies',
+          baseCostPerDay: 160,
+          days: [
+            { day: 'Day 1', title: 'Calgary to Banff Drive & Upper Hot Springs Soak', desc: 'Rent 4WD, take the Trans-Canada highway, relax in geothermal sulfur pools under Mount Rundle.' },
+            { day: 'Day 2', title: 'Moraine Lake Sunrise & Valley of the Ten Peaks Hike', desc: 'Witness the iconic turquoise mirror reflection as morning sun lights the glaciers.' },
+            { day: 'Day 3', title: 'Lake Louise Canoe Adventure & Lake Agnes Teahouse', desc: 'Paddle glacial blue waters and hike up to the 1901 alpine wooden teahouse.' },
+            { day: 'Day 4', title: 'Icefields Parkway Drive & Athabasca Glacier Walk', desc: 'Drive National Geographic\'s top scenic route, witness ice caves and roaring waterfalls.' },
+            { day: 'Day 5', title: 'Yoho National Park & Emerald Lake Natural Bridge', desc: 'Discover ancient Burgess Shale fossils and serene lakeside log cabin trails.' },
+            { day: 'Day 6', title: 'Mount Norquay Via Ferrata & Wildlife Safari', desc: 'Climb iron rungs overlooking Banff valley; spot elk, bighorn sheep, and black bears.' },
+            { day: 'Day 7', title: 'Johnston Canyon Catwalks & Farewell Bison Steakhouse', desc: 'Walk suspended catwalks through deep limestone gorges with frozen falls.' }
+          ]
+        },
+        santorini: {
+          name: 'Santorini & Cyclades',
+          baseCostPerDay: 200,
+          days: [
+            { day: 'Day 1', title: 'Ferry Arrival & Imerovigli Sunset Check-In', desc: 'Private plunge pool suite looking directly into the ancient volcanic caldera.' },
+            { day: 'Day 2', title: 'Caldera Rim Cliff Walk from Fira to Oia', desc: '10km coastal trek through pristine whitewashed churches and pumice trails.' },
+            { day: 'Day 3', title: 'Catamaran Sailing Cruise to Red Beach & Hot Springs', desc: 'Snorkel volcanic reefs, feast on freshly grilled souvlaki on board.' },
+            { day: 'Day 4', title: 'Megalochori Volcanic Vineyards & Assyrtiko Tasting', desc: 'Visit 150-year-old subterranean cellars carved into black volcanic stone.' },
+            { day: 'Day 5', title: 'Akrotiri Bronze Age Ruins & Perissa Black Sand Beach', desc: 'Discover Greece’s "Prehistoric Pompeii" preserved beneath volcanic ash.' },
+            { day: 'Day 6', title: 'Hidden Village of Pyrgos & Castle Sunset', desc: 'Wander medieval fortified alleys with zero tourist crowds and panoramic island views.' },
+            { day: 'Day 7', title: 'Ammoudi Bay Fresh Octopus Lunch & Departure', desc: 'Descend 300 steps from Oia to enjoy sea-splashed taverna tables by the Aegean.' }
+          ]
+        },
+        iceland: {
+          name: 'Reykjanes & Arctic Iceland',
+          baseCostPerDay: 180,
+          days: [
+            { day: 'Day 1', title: 'Keflavik Arrival & Bridge Between Continents', desc: 'Walk between Eurasian and North American tectonic plates on black volcanic sand.' },
+            { day: 'Day 2', title: 'Reykjadalur Geothermal River Hike & Bathe', desc: 'Soak in natural steaming 39°C mountain thermal waters amidst rolling moss.' },
+            { day: 'Day 3', title: 'Golden Circle: Thingvellir, Gullfoss & Strokkur', desc: 'Gaze into crystal-clear Silfra fissure and watch boiling geysers erupt 30 meters high.' },
+            { day: 'Day 4', title: 'South Coast Waterfalls: Seljalandsfoss & Skógafoss', desc: 'Walk behind a 60m waterfall veil, explore the black basalt columns of Reynisfjara.' },
+            { day: 'Day 5', title: 'Jökulsárlón Glacier Lagoon & Diamond Ice Beach', desc: 'Gargantuan blue icebergs floating out to sea, glowing diamonds on black volcanic sand.' },
+            { day: 'Day 6', title: 'Superjeep Northern Lights Chase & Ice Cave Trek', desc: 'Solar Cycle 25 maximum aurora hunting with expert local aurora meteorologists.' },
+            { day: 'Day 7', title: 'Secret Lagoon Soak & Reykjavik Harpa Sunset', desc: 'Centuries-old natural pool followed by fresh Arctic char dining in the capital.' }
+          ]
+        },
+        morocco: {
+          name: 'Chefchaouen & Morocco',
+          baseCostPerDay: 60,
+          days: [
+            { day: 'Day 1', title: 'Tangier to Chefchaouen Scenic Mountain Ride', desc: 'Ascend the dramatic Rif Mountains into the world\'s most famous blue-washed city.' },
+            { day: 'Day 2', title: 'Medina Photography Safari & Plaza Uta el-Hammam', desc: 'Explore cobblestone labyrinth corners, handmade woven rugs, and mint tea courtyards.' },
+            { day: 'Day 3', title: 'Spanish Mosque Sunset & Acoustic Andalusian Melodies', desc: 'Hike the hillside trail overlooking the glowing cobalt town bathed in sunset light.' },
+            { day: 'Day 4', title: 'Cascades d\'Akchour Day Trek & God\'s Bridge', desc: 'Crystal turquoise mountain rockpools and dramatic natural stone arch bridge.' },
+            { day: 'Day 5', title: 'Artisanal Soap & Organic Argan Oil Cooperative Visit', desc: 'Learn heritage cold-press extraction directly from Berber women artisans.' },
+            { day: 'Day 6', title: 'Kasbah Museum Gardens & Secret Rooftop Feast', desc: 'Taste slow-cooked lamb tagine with prunes, almonds, and freshly baked flatbread.' },
+            { day: 'Day 7', title: 'Ras El Maa Waterfall Stroll & Tangier Farewell', desc: 'Watch mountain spring waters cascade by village wash houses before departure.' }
+          ]
+        }
+      };
+
+      function updateItinerary() {
+        const destKey = destSelect.value;
+        const duration = parseInt(durationSelect.value, 10);
+        const style = styleSelect.value;
+        const data = ITINERARY_DATA[destKey] || ITINERARY_DATA['kyoto'];
+
+        let multiplier = 1.0;
+        if (style === 'romantic') multiplier = 1.6;
+        if (style === 'adventure') multiplier = 1.1;
+        if (style === 'luxury') multiplier = 2.4;
+        if (style === 'budget') multiplier = 0.8;
+
+        const totalCost = Math.round(data.baseCostPerDay * duration * multiplier);
+
+        titleElem.textContent = `${duration}-Day Curated ${data.name} Itinerary`;
+        costElem.textContent = `Est. Total: $${totalCost.toLocaleString()} / person`;
+
+        // Render days
+        timelineContainer.innerHTML = '';
+        const dayCount = Math.min(duration, data.days.length);
+
+        for (let i = 0; i < dayCount; i++) {
+          const item = data.days[i];
+          const dayDiv = document.createElement('div');
+          dayDiv.className = 'timeline-day-item';
+          dayDiv.innerHTML = `
+            <div class="timeline-day-marker">${item.day}</div>
+            <div class="timeline-day-details">
+              <h5>${item.title}</h5>
+              <p>${item.desc}</p>
+            </div>
+          `;
+          timelineContainer.appendChild(dayDiv);
+        }
+      }
+
+      if (destSelect && durationSelect && styleSelect) {
+        destSelect.addEventListener('change', updateItinerary);
+        durationSelect.addEventListener('change', updateItinerary);
+        styleSelect.addEventListener('change', updateItinerary);
+        updateItinerary();
+      }
+
+      // 5. Live Budget Calculator
+      const calcDays = document.getElementById('calc-days');
+      const calcStyle = document.getElementById('calc-style');
+      const calcResult = document.getElementById('calc-total-result');
+
+      function recalculateBudget() {
+        const days = parseInt(calcDays.value, 10) || 7;
+        const dailyRate = parseInt(calcStyle.value, 10) || 120;
+        const flightEstimate = 350; // Base deal
+        const total = (days * dailyRate) + flightEstimate;
+        if (calcResult) {
+          calcResult.textContent = `$${total.toLocaleString()}`;
+        }
+      }
+
+      if (calcDays && calcStyle) {
+        calcDays.addEventListener('input', recalculateBudget);
+        calcStyle.addEventListener('change', recalculateBudget);
+        recalculateBudget();
+      }
+
+    });
+  </script>
+
+</body>
+</html>
